@@ -1,0 +1,33 @@
+eos@eos:/etc/NetworkManager/system-connections$ sudo cat PIA\ Germany 
+[sudo] password for eos:        
+[connection]
+id=PIA Germany
+uuid=
+type=vpn
+autoconnect=false
+permissions=user:eos:;
+secondaries=
+timestamp=1492006990
+
+[vpn]
+connection-type=password
+auth=SHA1
+password-flags=1
+remote=germany.privateinternetaccess.com
+cipher=BF-CBC
+comp-lzo=yes
+proto-tcp=yes
+port=443
+username=
+ca=/etc/openvpn/ca.crt
+service-type=org.freedesktop.NetworkManager.openvpn
+
+[ipv4]
+dns-search=
+method=auto
+
+[ipv6]
+addr-gen-mode=stable-privacy
+dns-search=
+ip6-privacy=0
+method=ignore
